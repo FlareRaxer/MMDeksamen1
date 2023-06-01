@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Scharling Studio</title>
+    <link rel="stylesheet" href="eksamen.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pvt1tab.css"> <!-- Elza font from Adobe -->
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container"> <!-- Container for forside billede og navigationsmenu -->
+            <div class="forbillede-container">
+                <img class="forbillede" src="billeder/forside-billede.jpg" alt="Billede til min forside">
+                    <div class="tekstoverlay">
+                  
+                        <img src="billeder/logo-no-background.png" alt="Scharling Studio logo"> <!-- Logo til forside -->
+                    
+                    </div>
+            </div>
+                <nav> 
+                    <button class="menu-button" onclick="toggleMenu()">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>            
+                    </button>
+                    <div class="menu-overlay">
+                        <ul class="menu">
+                            <li><a href="index.html">Om mig</a></li>
+                            <li><a href="https://proces.scharlingstudio.dk/">Portfolio</a></li>
+                            <li><a href="kontakt.html"> Kontakt</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+    </header>
+    <br>
+    <h1>
+        Projekter fra min Portfolio
+    </h1>
+    <br>
+
+    <!-- Javascript der laver en hamburgermenu -->
+    <script> 
+        function toggleMenu() {
+            var menuOverlay = document.querySelector('.menu-overlay');
+            if (menuOverlay.style.display==="block") {
+                menuOverlay.style.display="none"
+            } else {    
+                menuOverlay.style.display="block";
+
+            }
+        }
+      </script>
+
+      
+    
+    <div class="grid-forside"> <!-- Grid container for forsiden -->
+        <div class="billede">
+            <img src="billeder/billedeafmig.jpg" alt="MovingArt">
+            <div class="billede-tekst">Billede brugt til pentool</div>
+        </div>
+        <div class="billede">
+            <img src="billeder/aiansigt.jpg" alt="Billede 2">
+            <div class="billede-tekst">Billede med pentool værktøj</div>
+        </div>
+        <div class="billede">
+            <img src="billeder/friend-finder.png" alt="Billede 3">
+            <div class="billede-tekst">Prototype workshop</div>
+        </div>
+        <div class="billede">
+            <img src="billeder/MovingArt Final GIF.gif" alt="Billede 4">
+            <div class="billede-tekst">Tekst 4</div>
+        </div>
+        <div class="billede">
+            <img src="billeder/Redesign-af-webside.png" alt="Billede 5">
+            <div class="billede-tekst">Projekt 2</div>
+        </div>
+        <div class="billede">
+            <img src="billeder/Animation workshop - Made with Clipchamp.gif" alt="Billede 6">
+            <div class="billede-tekst">Animation workshop</div>
+        </div>
+    </div>    
+    <br>
+    <h1>
+        Om mig
+    </h1>
+    <br>
+    <div class="ommig"> <!-- Om mig sektion -->
+        <p>
+            Med en baggrund som student på HTX i Fredericia blev nysgerrigheden for IT for alvor vakt. Det gjorde andre ting også, og derfor har jeg indtil nu være på forskellige uddannelser, herunder bygningskonstruktør, tømrer og speditørelev, inden jeg startede på multimediedesignuddannelsen i Odense, i februar 2023. 
+        <br>
+        <br>
+
+        Jeg har altid været nysgerrig på IT, videospil, foto og grafik og dets mange muligheder. Jeg er generelt den nysgerrige type, der sjældent siger nej, alene for at udfordre mig selv og for at lære nyt. 
+        <br>
+        <br>
+
+        På multimediedesigneruddannelsen har jeg især fået øjnene op for webprogrammering, da det er et spændende felt med rigtig mange muligheder. 
+        <br>
+        <br>
+
+        Jeg er især stærk i:
+        Webprogrammering
+        Photoshop
+        InDesign
+        </p>
+    </div>
+    
+    <footer>
+        <p> 
+            Denne hjemmeside er lavet af Scharling Studio, i forbindelse med eksamen på multimediedesigneruddannelsen's 1. semester
+        </p>
+    </footer>
+
+</body>
+</html>

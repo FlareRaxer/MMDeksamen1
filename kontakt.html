@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Scharling Studio</title>
+    <link rel="stylesheet" href="eksamen.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pvt1tab.css"> <!-- Elza font from Adobe -->
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container"> <!-- Container for forside billede og navigationsmenu -->
+            <div class="forbillede-container">
+            </div>
+                <nav> 
+                    <button class="menu-button" onclick="toggleMenu()">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>            
+                    </button>
+                    <div class="menu-overlay">
+                        <ul class="menu">
+                            <li><a href="index.html">Om mig</a></li>
+                            <li><a href="https://proces.scharlingstudio.dk/">Portfolio</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>
+        Kontakt mig
+    </h1>
+    <br>
+
+    <!-- Javascript der laver en hamburgermenu -->
+    <script> 
+        function toggleMenu() {
+            var menuOverlay = document.querySelector('.menu-overlay');
+            if (menuOverlay.style.display==="block") {
+                menuOverlay.style.display="none"
+            } else {    
+                menuOverlay.style.display="block";
+
+            }
+        }
+      </script>
+
+    
+    <div class="kontakt"> <!-- Kontakt mig sektion -->
+        <a href="https://www.linkedin.com/in/jonas-jensen-82860663/">Tjek min LinkedIn</a>
+        <a href="mailto:jonaskruse123@gmail.com">Send mig en mail</a>
+        <a href="tel:+4528340712">Ring til mig</a>
+        <a href="CV.pdf" download="CV.pdf" target="_blank">Download mit CV</a>
+    </div>
+    <img class="kontaktbillede" src="billeder/kontaktbillede-redigere-opti1.png" alt="Jeg peger opad">
+    <footer>
+        <p> 
+            Denne hjemmeside er lavet af Scharling Studio, i forbindelse med eksamen på multimediedesigneruddannelsen's 1. semester
+        </p>
+    </footer>
+
+</body>
+</html>

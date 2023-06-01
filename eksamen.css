@@ -1,0 +1,387 @@
+
+body {
+    background-color: rgba(181, 210, 203, 0.40);
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-family: "elza", sans-serif;
+    color: #DD7373;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+p {
+  font-size: 20px;
+  font-family: "elza", sans-serif;
+  color: #2e5266;
+  text-align: center;
+  font-weight: 150;
+  font-style: normal;
+}
+.header-container {
+  position: relative;
+  background: rgb(237,198,67);
+  background: radial-gradient(circle, rgba(237,198,67,1) 56%, rgba(252,128,70,1) 100%);
+
+}
+
+
+h1 .forsideoverskrift {
+    text-align: center;
+    font-size: 50px;
+    font-family: "elza", sans-serif;
+    color: rgb(179, 130, 170);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.forbillede-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.tekstoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tekstoverlay img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.forsideoverskrift {
+    text-align: center;
+    font-size: 50px;
+    font-family: "elza", sans-serif;
+    color: #DD7373;
+    margin-top: auto;
+    margin-bottom: 0;
+    white-space: normal;
+    
+}
+
+.forsidetekst {
+    text-align: center;
+    font-size: 30px;
+    font-family: "elza", sans-serif;
+    color: #DBD60D;
+    margin-top: 10px;
+    margin-bottom: 10;
+    font-weight: 200;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.grid-forside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.billede {
+  text-align: center;
+  
+}
+
+.billede img {
+  width: 100%;
+  max-height: 600px;
+  border-radius: 5%;
+}
+
+.billede-tekst {
+  font-size: 17px;
+  font-family: "elza", sans-serif;
+  color: #2e5266;
+  text-align: center;
+  font-weight: 150;
+  font-style: normal;
+}
+
+.ommig {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: auto;
+margin-bottom: 50px;
+text-align: center;
+max-width: 700px;
+transform: translateX(90%);
+}
+
+
+.kontakt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+  .kontakt a {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #b5d2cb;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-family: "elza", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+  }
+
+  .kontakt :hover {
+    color: #38a3a5; 
+  }
+
+  .kontaktbillede {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+
+/* Styles for screens larger than 650px */
+nav .menu {
+    display: block; 
+    color: rgb(46, 82, 102);  
+    background: rgb(46, 82, 102);
+    background: linear-gradient(180deg, rgba(221,115,115,1) 81%, rgba(219,214,13,0.50) 100%);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Align the <ul> horizontally in the center */
+    align-items: center; /* Align the <ul> vertically in the center */
+    z-index: 1; /* Set the z-index to 1 to make sure it stays on top */
+    list-style-type: none;
+    font-family: "elza", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+  }
+  
+  nav .menu-button {
+    display: none;
+  }
+
+  nav .menu-overlay 
+  { /* Style til kassen udenom listen  */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust the width as per your design */
+    height: 30px; /* Adjust the height as per your design */
+    background: rgb(46, 82, 103); /* Farve på teksten */
+    background: linear-gradient(90deg, rgba(2,0,36,0.95) 0%, rgba(9,45,121,1) 50%, rgba(0,0,0,0.95) 100%);
+    color: white; 
+    padding: 0px;  
+    display: flex;
+    justify-content: center; /* Align the <ul> horizontally in the center */
+    align-items: center; /* Align the <ul> vertically in the center */
+    z-index: 1; /* Set the z-index to 1 to make sure it stays on top */
+}
+
+nav .menu-overlay ul.menu {
+  display: flex; /* Set the display property to flex */
+  justify-content: center; /* Align the menu items horizontally in the center */
+  align-items: center; /* Align the menu items vertically in the center */
+  margin: auto;
+}
+
+nav .menu-overlay ul.menu li {
+  margin: 0 10px; /* Adjust the margin as per your design */
+}
+
+nav .menu-overlay ul.menu li:last-child {
+  margin-right: 0;
+}
+
+nav .menu-overlay ul li a {
+  color: #2e5266; /* Farve på teksten */
+  text-decoration: none;
+}
+
+nav .menu-overlay ul li:hover { /* Hover effekt for ul listen */
+  background-color: #38a3a5;
+}
+    
+  
+.forbillede 
+  {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu li {
+    width: 30%;
+    padding: 10px;
+    background-color: #b5d2cb;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  footer {
+    height: 60px;
+    background: rgb(221,115,115);
+    background: linear-gradient(0deg, rgba(221,115,115,1) 81%, rgba(219,214,13,0.7987570028011204) 100%);
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .footer p {
+    font-size: 20px;
+    font-family: "elza", sans-serif;
+    color: #2e5266;
+    text-align: center;
+    font-weight: 150;
+    font-style: normal;
+  }
+  
+  
+  /* Styles for screens smaller than 650px */
+    @media (max-width: 650px) 
+      {
+        nav .menu {
+          display: block;
+          box-sizing: auto;
+
+        }
+      
+        nav .menu-button {
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+      
+        nav .menu-button .line {
+          width: 25px;
+          height: 3px;
+          background-color: rgb(238, 21, 21);
+          margin-bottom: 5px;
+        }
+      
+        nav .menu-overlay { /* Style til kassen udenom listen  */
+          position: fixed;
+          top: 42px; /* Adjust the value according to your design */
+          right: 15px;
+          bottom: 0;
+          left: 0;
+          padding-top: 6px;
+          display: none;
+          background-color: rgb(2,0,36);
+          background-color: linear-gradient(90deg, rgba(2,0,36,0.95) 0%, rgba(9,45,121,1) 50%, rgba(0,0,0,0.95) 100%);
+          color:white;  
+          z-index: 1; /* Set the z-index to 1 to make sure it stays on top */
+        }
+      
+
+      
+        nav .menu-overlay ul.menu { /* Listen  */
+          list-style: none;
+          padding: 0px;
+          margin: 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          flex-wrap: wrap;
+        }
+      
+        nav .menu-overlay ul.menu li { /* style de tre menubokse */
+          margin-bottom: 10px; /* Mellemrum imellem linjer */
+          width: 100%;
+          text-align: center;
+        }
+
+        .tekstoverlay {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          text-align: center;
+          padding: 20px;
+          font-size: auto;
+          width: 100%;
+          box-sizing: border-box;
+
+        }
+      
+        .forsideoverskrift {
+          font-size: 30px;
+          max-width: 100%;
+          white-space: normal;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      
+        .forsidetekst {
+          font-size: 20px;
+          max-width: 100%;
+          white-space: normal;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .grid-forside {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
